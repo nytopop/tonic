@@ -15,6 +15,7 @@ pub(crate) use self::connector::connector;
 pub(crate) use self::discover::ServiceList;
 pub(crate) use self::io::ServerIo;
 pub(crate) use self::layer::ServiceBuilderExt;
-pub(crate) use self::router::{Or, Routes};
+pub use self::router::Or;
+pub(crate) use self::router::Routes;
 #[cfg(feature = "tls")]
 pub(crate) use self::tls::{TlsAcceptor, TlsConnector};
